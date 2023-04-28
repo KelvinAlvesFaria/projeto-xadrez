@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xadrez</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <link rel="icon" href="images/icone.ico">
+</head>
+<body>
+    <main>
+        <div id="vazio"></div>
+        <div id="tabuleiro">
+            <div class="linha">
+                <div class="quadrado claro" id="A8"><img src="images/torre-preta.png" alt="torrePreta"></div>
+                <div class="quadrado escuro" id="A7"><img src="images/peao-preto.png" alt="peaoPreto"></div>
+                <div class="quadrado claro" id="A6"></div>
+                <div class="quadrado escuro" id="A5"></div>
+                <div class="quadrado claro" id="A4"></div>
+                <div class="quadrado escuro" id="A3"></div>
+                <div class="quadrado claro" id="A2"><img src="images/peao-branco.png" alt="peaoBranco"></div>
+                <div class="quadrado escuro" id="A1"><img src="images/torre-branca.png" alt="torreBranca"></div>
+            </div>
+            <div class="linha">
+                <div class="quadrado escuro" id="B8"><img src="images/cavalo-preto.png" alt="cavaloPreto"></div>
+                <div class="quadrado claro" id="B7"><img src="images/peao-preto.png" alt="peaoPreto"></div>
+                <div class="quadrado escuro" id="B6"></div>
+                <div class="quadrado claro" id="B5"></div>
+                <div class="quadrado escuro" id="B4"></div>
+                <div class="quadrado claro" id="B3"></div>
+                <div class="quadrado escuro" id="B2"><img src="images/peao-branco.png" alt="peaoBranco"></div>
+                <div class="quadrado claro" id="B1"><img src="images/cavalo-branco.png" alt="cavaloBranco"></div>
+            </div>
+            <div class="linha">
+                <div class="quadrado claro" id="C8"><img src="images/bispo-preto.png" alt="bispoPreto"></div>
+                <div class="quadrado escuro" id="C7"><img src="images/peao-preto.png" alt="peaoPreto"></div>
+                <div class="quadrado claro" id="C6"></div>
+                <div class="quadrado escuro" id="C5"></div>
+                <div class="quadrado claro" id="C4"></div>
+                <div class="quadrado escuro" id="C3"></div>
+                <div class="quadrado claro" id="C2"><img src="images/peao-branco.png" alt="peaoBranco"></div>
+                <div class="quadrado escuro" id="C1"><img src="images/bispo-branco.png" alt="bispoBranco"></div>
+            </div>
+            <div class="linha">
+                <div class="quadrado escuro" id="D8"><img src="images/rainha-preta.png" alt="rainhaPreta"></div>
+                <div class="quadrado claro" id="D7"><img src="images/peao-preto.png" alt="peaoPreto"></div>
+                <div class="quadrado escuro" id="D6"></div>
+                <div class="quadrado claro" id="D5"></div>
+                <div class="quadrado escuro" id="D4"></div>
+                <div class="quadrado claro" id="D3"></div>
+                <div class="quadrado escuro" id="D2"><img src="images/peao-branco.png" alt="peaoBranco"></div>
+                <div class="quadrado claro" id="D1"><img src="images/rainha-branca.png" alt="rainhaBranca"></div>
+            </div>
+            <div class="linha">
+                <div class="quadrado claro" id="E8"><img src="images/rei-preto.png" alt="reiPreto"></div>
+                <div class="quadrado escuro" id="E7"><img src="images/peao-preto.png" alt="peaoPreto"></div>
+                <div class="quadrado claro" id="E6"></div>
+                <div class="quadrado escuro" id="E5"></div>
+                <div class="quadrado claro" id="E4"></div>
+                <div class="quadrado escuro" id="E3"></div>
+                <div class="quadrado claro" id="E2"><img src="images/peao-branco.png" alt="peaoBranco"></div>
+                <div class="quadrado escuro" id="E1"><img src="images/rei-branco.png" alt="reiBranco"></div>
+            </div>
+            <div class="linha">
+                <div class="quadrado escuro" id="F8"><img src="images/bispo-preto.png" alt="bispoPreto"></div>
+                <div class="quadrado claro" id="F7"><img src="images/peao-preto.png" alt="peaoPreto"></div>
+                <div class="quadrado escuro" id="F6"></div>
+                <div class="quadrado claro" id="F5"></div>
+                <div class="quadrado escuro" id="F4"></div>
+                <div class="quadrado claro" id="F3"></div>
+                <div class="quadrado escuro" id="F2"><img src="images/peao-branco.png" alt="peaoBranco"></div>
+                <div class="quadrado claro" id="F1"><img src="images/bispo-branco.png" alt="bispoBranco"></div>
+            </div>
+            <div class="linha">
+                <div class="quadrado claro" id="G8"><img src="images/cavalo-preto.png" alt="cavaloPreto"></div>
+                <div class="quadrado escuro" id="G7"><img src="images/peao-preto.png" alt="peaoPreto"></div>
+                <div class="quadrado claro" id="G6"></div>
+                <div class="quadrado escuro" id="G5"></div>
+                <div class="quadrado claro" id="G4"></div>
+                <div class="quadrado escuro" id="G3"></div>
+                <div class="quadrado claro" id="G2"><img src="images/peao-branco.png" alt="peaoBranco"></div>
+                <div class="quadrado escuro" id="G1"><img src="images/cavalo-branco.png" alt="cavaloBranco"></div>
+            </div>
+            <div class="linha">
+                <div class="quadrado escuro" id="H8"><img src="images/torre-preta.png" alt="torrePreta"></div>
+                <div class="quadrado claro" id="H7"><img src="images/peao-preto.png" alt="peaoPreto"></div>
+                <div class="quadrado escuro" id="H6"></div>
+                <div class="quadrado claro" id="H5"></div>
+                <div class="quadrado escuro" id="H4"></div>
+                <div class="quadrado claro" id="H3"></div>
+                <div class="quadrado escuro" id="H2"><img src="images/peao-branco.png" alt="peaoBranco"></div>
+                <div class="quadrado claro" id="H1"><img src="images/torre-branca.png" alt="torreBranca"></div>
+            </div>
+            <div id="promocaoPecasBrancas">
+                <p>Promoção</p>
+                <div id="promocaoPecasBrancasBotoes">
+                    <button id="botaoRainhaBranca" class="botaoPromocao">
+                        <p>Rainha</p>
+                        <img src="images/rainha-branca.png" alt="rainhaBranca">
+                    </button>
+                    <button id="botaoBispoBranco" class="botaoPromocao">
+                        <p>Bispo</p>
+                        <img src="images/bispo-branco.png" alt="bispoBranco">
+                    </button>
+                    <button id="botaoTorreBranca" class="botaoPromocao">
+                        <p>Torre</p>
+                        <img src="images/torre-branca.png" alt="torreBranca">
+                    </button>
+                    <button id="botaoCavaloBranco" class="botaoPromocao">
+                        <p>Cavalo</p>
+                        <img src="images/cavalo-branco.png" alt="cavaloBranco">
+                    </button>
+                </div>
+            </div>
+            <div id="promocaoPecasPretas">
+                <p>Promoção</p>
+                <div id="promocaoPecasPretasBotoes">
+                    <button id="botaoRainhaPreta" class="botaoPromocao">
+                        <p>Rainha</p>
+                        <img src="images/rainha-preta.png" alt="rainhaPreta">
+                    </button>
+                    <button id="botaoBispoPreto" class="botaoPromocao">
+                        <p>Bispo</p>
+                        <img src="images/bispo-preto.png" alt="bispoPreto">
+                    </button>
+                    <button id="botaoTorrePreta" class="botaoPromocao">
+                        <p>Torre</p>
+                        <img src="images/torre-preta.png" alt="torrePreta">
+                    </button>
+                    <button id="botaoCavaloPreto" class="botaoPromocao">
+                        <p>Cavalo</p>
+                        <img src="images/cavalo-preto.png" alt="cavaloPreto">
+                    </button>
+                </div>
+            </div>
+            <div id="vitoriaDasBrancas">
+                <p>Vitória das Brancas</p>
+                <button id="botaoVitoriaDasBrancas">
+                    <img src="images/refreshh.jpg" alt="Resetar">
+                </button>
+            </div>
+            <div id="vitoriaDasPretas">
+                <p>Vitória das Pretas</p>
+                <button id="botaoVitoriaDasPretas">
+                    <img src="images/refreshh.jpg" alt="Resetar">
+                </button>
+            </div>
+        </div>
+        <aside>
+            <h1>Turno das:</h1>
+            <div id="turno">
+                <p id="turnoP">Brancas</p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/kelvin-alves-faria-8660691b6/" target="_blank">Kelvin Alves Faria</a>
+    </footer>
+</body>
+</html>

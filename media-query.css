@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 1180px){
+    main{
+        flex-direction: column-reverse;
+    }
+    #vazio{
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main{
+        flex-direction: column-reverse;
+    }
+    #vazio{
+        width: 0px;
+    }
+    #tabuleiro{
+        width: 96vw;
+        height: 96vw;
+    }
+    .quadrado{
+        min-width: 12vw;
+        min-height: 12vw;
+    }
+    #tabuleiro img{
+        width: 10.5vw;
+    }
+}
